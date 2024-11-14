@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+.default-container {
+  @apply  max-w-3xl lg:max-w-5xl  xl:max-w-6xl 2xl:max-w-7xl ml-auto mx-auto px-5 xl:px-0;   
+}
+.br-transition {
+  @apply transition ease-in duration-200;
+}
+.link{
+  @apply hover:cursor-pointer br-transition nav-button; 
+}
+.btn-primary {
+  @apply bg-customtealblue hover:bg-customtealblue text-white px-6 py-2 rounded-full inline-block br-transition
+}
+.icon {
+  @apply text-black bg-blue-400 br-transition shadow-md border-customtealblue hover:bg-customtealblue shadow-gray-400 hover:text-white border-2 p-4 rounded-full  hover:scale-110 hover:shadow-lg
+}
+.tools-inner {
+  @apply flex items-center justify-between bg-cyan-200 shadow-cyan-600 rounded-md shadow-lg p-6 transform transition-all duration-1000 hover:scale-110 hover:shadow-2xl hover:shadow-cyan-900 
+}
+.tools-outer {
+  @apply grid grid-cols-1 sm:grid-cols-2 gap-8  p-4 w-full 
+}
+.cards {
+  @apply grid gap-3 p-6 md:p-12 bg-cyan-200 rounded-2xl border-4 border-cyan-500
+}
+.projects {
+  @apply grid gap-3 bg-cyan-400 rounded-md shadow-xl shadow-cyan-700
+}
+.nav-button {
+  @apply hover:underline-offset-4 hover:underline hover:px-2 hover:py-1 hover:text-white hover:rounded-md hover:bg-customtealblue active:underline-offset-4 active:underline active:py-1 active:text-white active:bg-customtealblue active:px-4
+
+}
+  
+}
+

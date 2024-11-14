@@ -1,0 +1,550 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>awara-portfolio</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/style.css" />
+
+  </head>
+  <body class="font-anuphan " >
+
+    <header class="fixed inset-x-0 z-50" id="mainMenu"   >
+      <div class="default-container py-3">       
+        <div class="flex items-center justify-between">
+          <div > <!--logo-->
+            <a href="/"  class="flex   items-center -space-x-3">            
+                <span class="text-3xl font-bold text-customtealblue w-12 h-12 p-2 rounded-full border-4 border-customOrange flex items-center justify-center">D</span>
+                <span class="text-3xl font-bold text-customOrange w-12 h-12 p-2 rounded-full border-4 border-customtealblue flex items-center justify-center">A</span>
+            </a>
+          </div> <!--end logo-->
+
+          <div class=" hidden xl:block">
+            <nav class="flex space-x-10 text-customtealblue font-semibold text-xl ">
+              <a onclick="scrollToSection ('home')" class="link">HOME</a>
+              <button onclick="scrollToSection ('about')"  class="link">ABOUT</button>
+              <button onclick="scrollToSection ('skills')"  class="link">SKILLS</button>
+              <button onclick="scrollToSection ('projects')"  class="link">PROJECTS</button>
+              <button onclick="scrollToSection ('contact')"  class="link">CONTACT</button>
+            </nav>
+          </div>
+
+          <div class="block xl:hidden"> 
+            <button class="text-customOrange" id="navBar"> 
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>                      
+            </button>   
+          </div>                    
+        </div>
+        <div id="mobileMenu" class="xl:hidden bg-blue-300 shadow-lg inset-x-0 absolute grid-flow-row justify-center text-start  hidden py-6">
+          <nav class="flex flex-col gap-2 justify-center  space-x-6">
+            <button  class="link">HOME</button>
+            <button class="link">ABOUT</button>
+            <button  class="link">SKILLS</button>
+            <button  class="link">PROJECTS</button>
+            <button  class="link">CONTACT</button>
+          </nav> 
+        </div>
+      </div>
+
+      
+    </header>
+
+    <main  id="home" class="bg-cyan-400">
+
+      <section class="bg-cyan-400 bg-center xl:mb-16 bg-cover bg-no-repeat" style="background-image: url('public/world-map.png');">
+        <div class="default-container "> <!--Home-->
+         <div class=" grid xl:grid-cols-2 mb-10 ">
+          <div class="flex items-center">
+            <div class="grid gap-6 mt-24 xl:my-48">
+              <h2 class="uppercase text-customOrange font-semibold ">Let's build something together</h2> 
+
+              <div class="flex justify-start items-center h-auto ">
+                <h1 id="animatedText" class="text-3xl sm:text-4xl xl:text-5xl font-bold text-center sm:py-4">
+                  <!-- Text will be animated here -->
+                </h1>
+              </div>
+              
+
+              <p class="text-2xl">I'm Passionate about creating intuitive and engaging user experiences. Specialize in transforming ideas into beautifully crafted products.</p>              
+              <div class="flex gap-6 xl:gap-12 justify-start ml-10 mt-4">
+                <a href="https://github.com/awara-dickson" target="_blank" class="icon  ">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="w-6 h-6" viewBox="0 0 24 24">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.11.82-.26.82-.577 0-.285-.01-1.04-.015-2.04-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.757-1.333-1.757-1.09-.745.082-.73.082-.73 1.205.085 1.84 1.237 1.84 1.237 1.07 1.836 2.81 1.306 3.495.998.108-.776.418-1.306.76-1.606-2.665-.3-5.467-1.334-5.467-5.93 0-1.31.467-2.38 1.235-3.22-.125-.302-.535-1.523.115-3.176 0 0 1.005-.322 3.3 1.23a11.46 11.46 0 0 1 3-.404c1.02.004 2.045.138 3 .404 2.285-1.552 3.29-1.23 3.29-1.23.655 1.653.245 2.874.12 3.176.77.84 1.235 1.91 1.235 3.22 0 4.61-2.805 5.625-5.475 5.92.43.37.81 1.1.81 2.22 0 1.606-.015 2.896-.015 3.287 0 .32.215.694.825.577C20.565 21.796 24 17.297 24 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                </a>                
+                <a href="https://www.linkedin.com/in/awaradickson/" target="_blank" class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11.75 19h-3.5v-10h3.5v10zm-1.75-11.5c-1.122 0-2-.878-2-2s.878-2 2-2 2 .878 2 2-.878 2-2 2zm13.25 11.5h-3.5v-5.5c0-1.094-.906-2-2-2s-2 .906-2 2v5.5h-3.5v-10h3.5v1.25c.74-1.148 2.032-1.75 3.5-1.75 2.206 0 4 1.794 4 4v6.5z"/>
+                  </svg>
+                </a>
+                <a href="https://www.behance.net/awaradickson" target="_blank" class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M22 7.001h-5v1.5h5v-1.5zm-3.5 5.005c-1.377 0-1.5.99-1.5.99h2.92c-.003-.108-.052-.99-1.42-.99zm-6.5-.004h-2v2h2.014c.678 0 1.488-.285 1.486-1.002.002-.63-.432-.998-1.5-.998zm0-3.002h-1.988v1.502h1.988c.569 0 1.455-.058 1.453-.75.002-.676-.676-.752-1.453-.752zm9.5-6h-20c-.552 0-1 .448-1 1v20c0 .552.448 1 1 1h20c.552 0 1-.448 1-1v-20c0-.552-.448-1-1-1zm-8.526 10.782c.023 2.313-2.973 2.22-2.973 2.22h-3.501v4.003h-2.5v-10h6.008c.937 0 2.993.297 2.993 2.282 0 .937-.547 1.701-1.527 1.982 1.219.209 1.5 1.048 1.5 1.513zm7.026 1.799c0 3.323-3.026 3-3.026 3-2.975 0-3.007-2.708-3.007-2.708h2.5s.083.998 1.004 1c1 0 1.026-.994 1.026-1.009h-2.027c-.014 0 .027-3.003 3.003-3.003 2.975 0 2.527 2.729 2.527 2.729z"/>
+                  </svg>
+                </a>
+              </div>            
+            </div>
+          </div>
+          <div class="flex items-end xl:mt-12">
+            <div class="grid mb-8">
+              <img src="public/dickson2.png" alt=" Dickson" class="w-full h-auto  ">
+
+              <p class="text-3xl  font-semibold text-center m-4 bg-cyan-400 -mt-8 text-customtealblue hover:text-customOrange  ">&star;&star;&star;&star;&star; </p>
+            </div>
+
+          </div>
+         </div>
+        </div>
+      </section>     
+
+      <section id="about"  class="bg-cyan-500">
+        <div class="default-container pb-16 xl:pt-16 items-center justify-center">
+          <div class="grid xl:grid-cols-3 gap-6 xl:gap-12">
+            <div class="flex items-center xl:col-span-2">
+                <div class="grid gap-6">
+                    <h4 class="text-2xl font-extralight " style="word-spacing: 0.2em;">ABOUT</h4>
+                    <h4 class="text-4xl font-bold">Who I am</h4>
+                    <p class="text-xl font-normal">
+                        Hello! I'm Dickson, a passionate front-end engineer and UI/UX designer. I specialize in crafting seamless, user-friendly experiences with a keen eye for design and attention to detail. With expertise in HTML, CSS, JavaScript, and Tailwind CSS, I bring landing pages and interfaces to life, focusing on clean, responsive code and smooth interactivity.
+                        <br><br>
+                        In addition to front-end development, I leverage Figma to design and prototype commercial websites, ensuring each element aligns with the brand and meets user needs. Whether it's developing from scratch or refining an existing concept, my goal is to create interfaces that are both functional and visually compelling.
+                        <br><br>
+                        I'm excited to share my journey and showcase the projects I've crafted along the way. Let's connect and bring more ideas to life!
+                    </p>
+                    <a href="#" class="text-xl underline underline-offset-8 text-customOrange">Check out my latest projects and experience</a>
+                </div>
+            </div>
+            <div class="grid xl:flex col-span-1 w-full h-auto border-8 border-spacing-12 border-cyan-50 rounded-md shadow-lg  ">
+                <img src="public/coding4-img.jpg" alt="About BrightDev" class="w-full h-auto rounded-md">
+            </div>
+        </div>
+        
+        </div>
+      </section>     
+
+      <section id="skills" class="bg-b-200">
+        <div class="default-container pb-16 xl:pt-16 flex flex-col items-center justify-center">
+
+          <h1  class="grid text-6xl font-bold justify-center items-center my-10  " >Skills</h1>
+
+          <div class="grid grid-cols-1 xl:grid-cols-5 gap-8 xl:gap-12 m-4">
+            <div class="w-full h-auto xl:col-span-2 b bg-cyan-500 rounded-md shadow-lg">
+              <video class="w-full h-auto rounded-lg shadow-lg max-w-3xl mx-auto p-8" autoplay loop muted playsinline aria-label="Coding demo video">
+                <source src="public/Coding.mp4" type="video/mp4">
+                Video playback not supported.
+              </video>
+            </div>
+
+            <div class="xl:col-span-3">
+              <div class="flex flex-col items-center gap-6">
+                
+                <h4 class="text-4xl font-bold justify-start">My Tech Stack</h4>        
+                
+                <div class="tools-outer ">                  
+                  <div class="tools-inner ">
+                    <img class="h-20 w-20 rounded-md" src="public/JavaScript-logo.png" alt="JavaScript Logo">
+                    <p class="font-semibold text-2xl pr-8">JavaScript</p>
+                  </div>                  
+                 
+                  <div class="tools-inner">
+                    <img class="h-20 w-20 rounded-md" src="public/tailwindCSS-LOGO.png" alt="Tailwind-css logo">
+                    <p class="font-semibold text-2xl pr-8">Tailwind Css</p>
+                  </div>
+
+                  <div class="tools-inner">
+                    <img class="h-20 w-20 rounded-md" src="public/figma-logo.png" alt="Figma Logo">
+                    <p class="font-semibold text-2xl pr-8">Figma </p>
+                  </div>
+
+                  <div class="tools-inner">
+                    <img class="h-20 w-20 rounded-md" src="public/html-logo.png" alt="HTML Logo">
+                    <p class="font-semibold text-2xl pr-8">HTML</p>
+                  </div>
+
+                  <div class="tools-inner">
+                    <img class="h-20 w-20 rounded-md" src="public/git-logo.png" alt="git Logo">
+                    <p class="font-semibold text-2xl pr-8">GIT</p>
+                  </div>
+
+                  <div class="tools-inner">
+                    <img class="h-20 w-20 rounded-md" src="public/typescript-LOGO.png" alt="typescript Logo">
+                    <p class="font-semibold text-2xl pr-8">TypeScript</p>
+                  </div>
+                </div>
+              </div>
+            </div>  
+          </div>
+        </div>
+      </section>      
+       
+
+      <section>
+        <div class="default-container ">
+          <div class="grid gap-3">
+            <div>
+              <h2 class="text-customOrange uppercase text-xl font-bold">What I do</h2>
+              <h4 class="text-2xl font-bold mt-1">Crafting Wold-Class Applications</h4>
+            </div>
+            <div>
+              <p>I specialize in crafting high-quality, custom software that helps businesses thrive.
+              </p>
+            </div>
+          </div>
+          <div class="grid xl:grid-cols-3 gap-4 mt-8">
+            <div class="cards">
+              <div class="size-16 bg-orange-100 flex items-center justify-center text-orange-500">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+              </svg>
+              </div>
+               <h4 class="font-bold ">Mobile App Development</h4>
+               <p>Reach your customers on-the-go with custom mobile applications designed for both iOS and Android platforms.</p>
+               <P>
+                <a href="#" class="link">Learn More &rarr;</a>
+               </P>
+            </div>
+            <div class="cards shadow-cyan-900 shadow-md ">
+              <div class="size-16 bg-green-100 flex items-center justify-center text-cyan-500">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 0 1 3.75 9.375v-4.5ZM3.75 14.625c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5a1.125 1.125 0 0 1-1.125-1.125v-4.5ZM13.5 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 0 1 13.5 9.375v-4.5Z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 6.75h.75v.75h-.75v-.75ZM6.75 16.5h.75v.75h-.75v-.75ZM16.5 6.75h.75v.75h-.75v-.75ZM13.5 13.5h.75v.75h-.75v-.75ZM13.5 19.5h.75v.75h-.75v-.75ZM19.5 13.5h.75v.75h-.75v-.75ZM19.5 19.5h.75v.75h-.75v-.75ZM16.5 16.5h.75v.75h-.75v-.75Z" />
+                </svg>                
+              </div>
+               <h4 class="font-bold ">Custom Software Development</h4>
+               <p>I develop tailor-made applications that address your unique business challenges.</p>
+               <P>
+                <a href="#" class="btn-primary">Learn More &rarr;</a>
+               </P>
+            </div>
+            <div class="cards">
+              <div class="size-16 bg-yellow-100 flex items-center justify-center text-customOrange">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                </svg>          
+              </div>
+               <h4 class="font-bold ">E-commerce Development</h4>
+               <p>I build high-performance e-commerce platforms that convert visitors into loyal customers.</p>
+               <P>
+                <a href="#" class="link">Learn More &rarr;</a>
+               </P>
+            </div>  
+          </div>          
+        </div>
+      </section>
+    
+      <section id="projects">
+        <div class="default-container mt- xl:mt-16"> 
+          <div class="flex justify-center m-6 xl:m-12"> 
+            <h2 class="text-customOrange text-2xl font-bold my-4">My Work</h2>
+          </div>
+
+          <div class="grid">           
+              <h4 class="text-3xl font-bold mt-1">Front-End   Development Projects</h4>
+          </div> 
+           <div class="grid  xl:grid-cols-2 gap-6 mt-6">
+            <div class="projects ">
+
+              <img src="public/img/portfolio-2.png" class="w-full h-auto object-cover rounded" alt="Developer Portfolio">
+
+             <div class="bg-cyan-400 -mt-16 rounded-xl">
+              <div class="px-4 ">
+                <h4 class="font-bold mb-4 ">Developer Portfolio</h4>
+                <p>Simple and classic modern portfolio for who wants to present himself as a software developer. Portfolio build with highly customizable using Tailwind CSS and JavaScript</p>
+              </div> 
+              <div class="flex gap-3 justify-end rounded-md mr-8 mb-4">
+                <a href="https://github.com/awara-dickson" target="_blank" class="icon  ">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="w-6 h-6" viewBox="0 0 24 24">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.11.82-.26.82-.577 0-.285-.01-1.04-.015-2.04-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.757-1.333-1.757-1.09-.745.082-.73.082-.73 1.205.085 1.84 1.237 1.84 1.237 1.07 1.836 2.81 1.306 3.495.998.108-.776.418-1.306.76-1.606-2.665-.3-5.467-1.334-5.467-5.93 0-1.31.467-2.38 1.235-3.22-.125-.302-.535-1.523.115-3.176 0 0 1.005-.322 3.3 1.23a11.46 11.46 0 0 1 3-.404c1.02.004 2.045.138 3 .404 2.285-1.552 3.29-1.23 3.29-1.23.655 1.653.245 2.874.12 3.176.77.84 1.235 1.91 1.235 3.22 0 4.61-2.805 5.625-5.475 5.92.43.37.81 1.1.81 2.22 0 1.606-.015 2.896-.015 3.287 0 .32.215.694.825.577C20.565 21.796 24 17.297 24 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                </a>  
+              </div>
+             </div>
+            </div>
+           
+            <div class="projects">
+              <img src="public/img/bright-dev.png" class="w-full h-auto object-cover rounded" alt="Bright-star dev">
+              <h4 class="font-bold ">BrightStar Website</h4>
+              <p>FoodFair, a leading food delivery company, enhanced their operations with a custom logistics platform from AlphaDev that cut delivery times by 20% and improved customer satisfaction.</p>
+            </div>
+
+            <div class="projects">
+              <img src="public/img/Bright-star.png" class="w-full h-auto object-cover rounded" alt="Property Management System">
+              <h4 class="font-bold ">Property Management System</h4>
+              <p>We partnered with KConstruction Corp, a real estate company, to develop a property management system that centralized their listings, reduced administrative overhead, and improved communication with clients by 40%.</p>
+            </div>  
+            <div class="projects">
+              <img src="public/img/Amazon-clone.png" class="w-full h-auto object-cover rounded" alt="Property Management System">
+              <h4 class="font-bold ">Property Management System</h4>
+              <p>We partnered with KConstruction Corp, a real estate company, to develop a property management system that centralized their listings, reduced administrative overhead, and improved communication with clients by 40%.</p>
+            </div>  
+          </div>
+
+          <div class="grid">            
+              <h4 class="text-4xl font-bold mt-8 underline underline-offset-2">Web Design Projects</h4>               
+          </div> 
+
+          <div class="grid  xl:grid-cols-2 gap-6 mt-6">
+            <div class="projects ">
+              <img src="public/img/BrightNutrition-web.png" class="w-full h-auto object-cover rounded" alt="Cloud-Based CRM">
+              <h4 class="font-bold ">Cloud-Based CRM</h4>
+              <p>For Snobole Software Limited, we implemented a cloud-based CRM system that improved client communication and boosted overall project efficiency by 50%</p>
+            </div> 
+            <div class="projects">
+              <img src="public/img/organic-food webdesign.png" class="w-full h-auto object-cover rounded" alt="Cloud-Based CRM">
+              <h4 class="font-bold ">Cloud-Based CRM</h4>
+              <p>For Snobole Software Limited, we implemented a cloud-based CRM system that improved client communication and boosted overall project efficiency by 50%</p>
+            </div> 
+            <div class="projects">
+              <img src="public/img/E-commerce.png" class="w-full h-auto object-cover rounded" alt="Cloud-Based CRM">
+              <h4 class="font-bold ">Cloud-Based CRM</h4>
+              <p>For Snobole Software Limited, we implemented a cloud-based CRM system that improved client communication and boosted overall project efficiency by 50%</p>
+            </div> 
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="default-container py-16">
+          <div class="grid">
+            <h1 class="text-customtealblue text-2xl tracking-widest ">CONTACT</h1>
+            <h2 class="font-bold text-3xl xl:text-5xl my-8 ">Get In Touch </h2>
+
+            <div class="grid gap-8 xl:gap-16 xl:grid-cols-7">
+              <div class="grid xl:col-span-3">
+                <div class="px-6 py-10  border-cyan-500 shadow-xl ">
+                  <img class="w-full h-auto object-cover m-2  rounded-md" src="public/img/organic-mockup.png" alt="organic food website mockup">
+
+                  <p class="font-bold text-2xl xl:text-3xl mx-2 my-4 ">Front-End Developer</p>
+  
+                  <p class="text-lg tracking-wide mx-2 mb-6">I'm available for freelance or full-time positions. Contact me and let's connect.</p>
+  
+                  <p class="mx-2 text-2xl">LET'S CONNECT</p>
+  
+                  <div class="flex gap- xl:gap-12 justify-between ml-2 mr-10 max-w-xl mt-4">
+                    <a href="https://github.com/awara-dickson" target="_blank" class="icon  ">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="w-6 h-6" viewBox="0 0 24 24">
+                        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.11.82-.26.82-.577 0-.285-.01-1.04-.015-2.04-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.757-1.333-1.757-1.09-.745.082-.73.082-.73 1.205.085 1.84 1.237 1.84 1.237 1.07 1.836 2.81 1.306 3.495.998.108-.776.418-1.306.76-1.606-2.665-.3-5.467-1.334-5.467-5.93 0-1.31.467-2.38 1.235-3.22-.125-.302-.535-1.523.115-3.176 0 0 1.005-.322 3.3 1.23a11.46 11.46 0 0 1 3-.404c1.02.004 2.045.138 3 .404 2.285-1.552 3.29-1.23 3.29-1.23.655 1.653.245 2.874.12 3.176.77.84 1.235 1.91 1.235 3.22 0 4.61-2.805 5.625-5.475 5.92.43.37.81 1.1.81 2.22 0 1.606-.015 2.896-.015 3.287 0 .32.215.694.825.577C20.565 21.796 24 17.297 24 12c0-6.63-5.37-12-12-12z"/>
+                      </svg>
+                    </a>                
+                    <a href="https://www.linkedin.com/in/awaradickson/" target="_blank" class="icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11.75 19h-3.5v-10h3.5v10zm-1.75-11.5c-1.122 0-2-.878-2-2s.878-2 2-2 2 .878 2 2-.878 2-2 2zm13.25 11.5h-3.5v-5.5c0-1.094-.906-2-2-2s-2 .906-2 2v5.5h-3.5v-10h3.5v1.25c.74-1.148 2.032-1.75 3.5-1.75 2.206 0 4 1.794 4 4v6.5z"/>
+                      </svg>
+                    </a>
+                    <a href="https://www.behance.net/awaradickson" target="_blank" class="icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M22 7.001h-5v1.5h5v-1.5zm-3.5 5.005c-1.377 0-1.5.99-1.5.99h2.92c-.003-.108-.052-.99-1.42-.99zm-6.5-.004h-2v2h2.014c.678 0 1.488-.285 1.486-1.002.002-.63-.432-.998-1.5-.998zm0-3.002h-1.988v1.502h1.988c.569 0 1.455-.058 1.453-.75.002-.676-.676-.752-1.453-.752zm9.5-6h-20c-.552 0-1 .448-1 1v20c0 .552.448 1 1 1h20c.552 0 1-.448 1-1v-20c0-.552-.448-1-1-1zm-8.526 10.782c.023 2.313-2.973 2.22-2.973 2.22h-3.501v4.003h-2.5v-10h6.008c.937 0 2.993.297 2.993 2.282 0 .937-.547 1.701-1.527 1.982 1.219.209 1.5 1.048 1.5 1.513zm7.026 1.799c0 3.323-3.026 3-3.026 3-2.975 0-3.007-2.708-3.007-2.708h2.5s.083.998 1.004 1c1 0 1.026-.994 1.026-1.009h-2.027c-.014 0 .027-3.003 3.003-3.003 2.975 0 2.527 2.729 2.527 2.729z"/>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="grid col-span-4 ">
+                <div class=" px-6 py-10  border-cyan-500 shadow-xl text-center ">
+                  <h2 class="text-3xl font-bold my-4">Contact Me</h2>
+                  <p class="text-gray-600 mb-8">If you'd like to reach out, please fill in the form below:</p>
+
+                  <!-- Link or Button to Open the Popup -->
+                   <div>
+                    <a href="https://docs.google.com/forms/d/1o5Tcm25W4R3u6msdRawP0A18-cdaYAero91KetdALZM/edit" onclick="openPopup(event, 'https://docs.google.com/forms/d/1o5Tcm25W4R3u6msdRawP0A18-cdaYAero91KetdALZM/edit')" class="my-6 p-4 bg-customtealblue text-white font-semibold rounded-md hover:bg-blue-700">Open Contact Form</a>
+                   </div>
+                   <p class="text-black my-8">
+                      You can as well reach me directly through
+                    <a href="mailto:awaradickson@gmail.com" class="text-customtealblue text-lg hover:underline">
+                      awaradickson@gmail.com
+                    </a>
+                  </p>
+                  <form id="contactForm" class="space-y-6">
+                    <div class="grid my-8 md:grid-cols-2 gap-6">
+                      <div>                      
+                        <label for="name" class="block text-left text-sm font-medium text-gray-700">Name:</label>
+                        <input
+                          type="text"
+                          id="name"
+                          name="name"
+                          required
+                          placeholder="Your Name"
+                          class="w-full mt-1 p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        />
+                      </div>
+  
+                      <div>
+                        <label for="phone" class="block text-left text-sm font-medium text-gray-700">Phone Number:</label>
+                        <input
+                          type="tel"
+                          id="phone"
+                          name="phone"
+                          required
+                          placeholder="Your Phone Number"
+                          pattern="[0-9]{10}"
+                          class="w-full mt-1 p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        />
+                      </div>
+                    </div>
+                    
+                    <div>                      
+                      <label for="Email" class="block text-left text-sm font-medium text-gray-700">Email:</label>
+                      <input
+                        type="text"
+                        id="email"
+                        name="email"
+                        required
+                        placeholder="Your Email"
+                        class="w-full mt-1 p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      />
+                    </div>
+                    <div>
+                      <label for="message" class="block text-left text-sm font-medium text-gray-700">Message:</label>
+                      <textarea
+                        id="message"
+                        name="message"
+                        required
+                        placeholder="Your Message"
+                        class="w-full mt-1 p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 resize-y"
+                      ></textarea>
+                    </div>
+                    <button
+                      type="submit"
+                      class=" w-full max-w-md text-center justify-center py-3 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                    >
+                      Send Message
+                    </button>
+                  </form>                  
+                </div> 
+              </div>
+
+            </div>
+
+          </div>
+
+        </div> 
+      </section>
+      <section>
+        <div>
+          <div class="flex flex-col items-center text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" onclick="scrollToSection('home')" class="h-20 w-20 rounded-full shadow-lg bg-customtealblue p-2 hover:cursor-pointer hover:text-customOrange hover:scale-110 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M5 10l7-7 7 7M5 20l7-7 7 7" />
+            </svg>
+          </div>
+          
+        </div>
+      </section>
+    </main>
+    <script>
+      (function() {
+       const mainMenu = document.getElementById ('mainMenu');
+
+       if (mainMenu) {
+        window.addEventListener('scroll', function () {
+          const scrollpos = window.scrollY;
+
+          if (scrollpos > 10) {
+            mainMenu.classList.add('bg-white');
+          } else {
+            mainMenu.classList.remove('bg-white');
+          }
+        })
+       }
+      }) ();
+
+      const navBar = document.getElementById('navBar');
+       const mobileMenu = document.getElementById('mobileMenu');
+
+     navBar.addEventListener('click', () => {
+       mobileMenu.classList.toggle ('hidden');
+  });
+
+   
+  const texts = ["Hi I'M  Dickson Awara.", "A Front-End Developer.", "And A UI-UX Designer."];
+  
+  const textContainer = document.getElementById("animatedText");
+  let textIndex = 0; // Keeps track of which text to display
+  let charIndex = 0; // Keeps track of the character position in the current text
+
+  // Function to type the text one character at a time
+  function typeText() {
+    if (charIndex < texts[textIndex].length) {
+      textContainer.innerHTML += texts[textIndex].charAt(charIndex);
+      charIndex++;
+      setTimeout(typeText, 200); // Adjust typing speed here
+    } else {
+      // After typing, wait a moment and then clear text for the next phase
+      setTimeout(clearText, 2000); // Adjust pause duration here
+    }
+  }
+
+  // Function to clear the text for the next phrase
+  function clearText() {
+    if (charIndex > 0) {
+      textContainer.innerHTML = texts[textIndex].substring(0, charIndex - 1);
+      charIndex--;
+      setTimeout(clearText, 50); // Adjust deleting speed here
+    } else {
+      // Move to the next text
+      textIndex = (textIndex + 1) % texts.length; // Loop back if needed
+      setTimeout(typeText, 500); // Start typing the next phrase
+    }
+  }
+
+  // Start the typing effect on page load
+  window.onload = typeText;
+
+  document.getElementById("contactForm").addEventListener("submit", function(event) {
+  event.preventDefault(); // Prevents default form submission
+
+  const name = document.getElementById("name").value.trim();
+  const phone = document.getElementById("phone").value.trim();
+  const message = document.getElementById("message").value.trim();
+
+  if (!name || !phone || !message) {
+    alert("Please fill out all fields.");
+    return;
+  }
+
+  // Validate phone number format
+  const phonePattern = /^[0-9]{10}$/;
+  if (!phonePattern.test(phone)) {
+    alert("Please enter a valid 10-digit phone number.");
+    return;
+  }
+
+ // alert("Thank you for reaching out! I’ll get back to you soon.");
+  // Here you could also send form data to a backend service
+});
+
+function openPopup(event, url) {
+    event.preventDefault(); // Prevent default link behavior
+
+    // Calculate half of the screen width and height
+    const screenWidth = window.innerWidth;
+    const screenHeight = window.innerHeight;
+    const popupWidth = screenWidth / 2;
+    const popupHeight = screenHeight / 2;
+
+    // Calculate top and left to center the popup
+    const top = (screenHeight - popupHeight) / 2;
+    const left = (screenWidth - popupWidth) / 2;
+
+    // Open the popup window with specified dimensions
+    window.open(url, "_blank", `width=${popupWidth},height=${popupHeight},top=${top},left=${left}`);
+  }
+
+
+  function scrollToSection(sectionId) {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+    </script>
+  </body>
+</html>
+
