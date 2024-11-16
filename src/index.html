@@ -15,7 +15,7 @@
   </head>
   <body class="font-anuphan " >
 
-    <header class="fixed inset-x-0 z-50" id="mainMenu"   >
+    <header class="fixed inset-x-0 z-50 bg-cyan-200"    >
       <div class="default-container py-3">       
         <div class="flex items-center justify-between">
           <div > <!--logo-->
@@ -26,7 +26,7 @@
           </div> <!--end logo-->
 
           <div class=" hidden xl:block">
-            <nav class="flex space-x-10 text-customtealblue font-semibold text-xl ">
+            <nav class="flex space-x-10 text-customtealblue font-semibold text-xl" id="navLinks" >
               <a onclick="scrollToSection ('home')" class="link">HOME</a>
               <button onclick="scrollToSection ('about')"  class="link">ABOUT</button>
               <button onclick="scrollToSection ('skills')"  class="link">SKILLS</button>
@@ -36,25 +36,23 @@
           </div>
 
           <div class="block xl:hidden"> 
-            <button class="text-customOrange" id="navBar"> 
+            <button class="text-customOrange " id="mobileMenuToggle"> 
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                 </svg>                      
             </button>   
           </div>                    
         </div>
-        <div id="mobileMenu" class="xl:hidden bg-blue-300 shadow-lg inset-x-0 absolute grid-flow-row justify-center text-start  hidden py-6">
-          <nav class="flex flex-col gap-2 justify-center  space-x-6">
-            <button  class="link">HOME</button>
-            <button class="link">ABOUT</button>
-            <button  class="link">SKILLS</button>
-            <button  class="link">PROJECTS</button>
-            <button  class="link">CONTACT</button>
+        <div class="hidden mt-2 bg-customGreen py-4 px-8 justify-end text-end rounded-md w-auto mx-8 bg-cyan-300 shadow-lg" id="mobileNav" >
+          <nav class="flex flex-col items-start text-start  space-y-6">
+            <button onclick="scrollToSection ('home')" class="link">HOME</button>
+            <button onclick="scrollToSection ('about')" class="link">ABOUT</button>
+            <button onclick="scrollToSection ('skills')" class="link">SKILLS</button>
+            <button onclick="scrollToSection ('projects')" class="link">PROJECTS</button>
+            <button onclick="scrollToSection ('contact')" class="link">CONTACT</button>
           </nav> 
         </div>
       </div>
-
-      
     </header>
 
     <main  id="home" class="bg-cyan-400">
@@ -260,7 +258,7 @@
                 <p>Simple and classic modern portfolio for who wants to present himself as a software developer. Portfolio build with highly customizable using Tailwind CSS and JavaScript</p>
               </div> 
               <div class="flex gap-3 justify-end rounded-md mr-8 mb-4">
-                <a href="https://github.com/awara-dickson" target="_blank" class="icon  ">
+                <a href="https://awara-dickson.github.io/" target="_blank" class="icon  ">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="w-6 h-6" viewBox="0 0 24 24">
                     <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.11.82-.26.82-.577 0-.285-.01-1.04-.015-2.04-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.757-1.333-1.757-1.09-.745.082-.73.082-.73 1.205.085 1.84 1.237 1.84 1.237 1.07 1.836 2.81 1.306 3.495.998.108-.776.418-1.306.76-1.606-2.665-.3-5.467-1.334-5.467-5.93 0-1.31.467-2.38 1.235-3.22-.125-.302-.535-1.523.115-3.176 0 0 1.005-.322 3.3 1.23a11.46 11.46 0 0 1 3-.404c1.02.004 2.045.138 3 .404 2.285-1.552 3.29-1.23 3.29-1.23.655 1.653.245 2.874.12 3.176.77.84 1.235 1.91 1.235 3.22 0 4.61-2.805 5.625-5.475 5.92.43.37.81 1.1.81 2.22 0 1.606-.015 2.896-.015 3.287 0 .32.215.694.825.577C20.565 21.796 24 17.297 24 12c0-6.63-5.37-12-12-12z"/>
                   </svg>
@@ -358,66 +356,11 @@
                    </div>
                    <p class="text-black my-8">
                       You can as well reach me directly through
-                    <a href="mailto:awaradickson@gmail.com" class="text-customtealblue text-lg hover:underline">
+                    <a href="mailto:awaradickson@gmail.com" class="text-customtealblue text-xl hover:underline hover:bg-white ">
                       awaradickson@gmail.com
                     </a>
                   </p>
-                  <form id="contactForm" class="space-y-6">
-                    <div class="grid my-8 md:grid-cols-2 gap-6">
-                      <div>                      
-                        <label for="name" class="block text-left text-sm font-medium text-gray-700">Name:</label>
-                        <input
-                          type="text"
-                          id="name"
-                          name="name"
-                          required
-                          placeholder="Your Name"
-                          class="w-full mt-1 p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
-                        />
-                      </div>
-  
-                      <div>
-                        <label for="phone" class="block text-left text-sm font-medium text-gray-700">Phone Number:</label>
-                        <input
-                          type="tel"
-                          id="phone"
-                          name="phone"
-                          required
-                          placeholder="Your Phone Number"
-                          pattern="[0-9]{10}"
-                          class="w-full mt-1 p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
-                        />
-                      </div>
-                    </div>
-                    
-                    <div>                      
-                      <label for="Email" class="block text-left text-sm font-medium text-gray-700">Email:</label>
-                      <input
-                        type="text"
-                        id="email"
-                        name="email"
-                        required
-                        placeholder="Your Email"
-                        class="w-full mt-1 p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
-                      />
-                    </div>
-                    <div>
-                      <label for="message" class="block text-left text-sm font-medium text-gray-700">Message:</label>
-                      <textarea
-                        id="message"
-                        name="message"
-                        required
-                        placeholder="Your Message"
-                        class="w-full mt-1 p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 resize-y"
-                      ></textarea>
-                    </div>
-                    <button
-                      type="submit"
-                      class=" w-full max-w-md text-center justify-center py-3 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
-                    >
-                      Send Message
-                    </button>
-                  </form>                  
+                                
                 </div> 
               </div>
 
@@ -439,27 +382,21 @@
       </section>
     </main>
     <script>
-      (function() {
-       const mainMenu = document.getElementById ('mainMenu');
+      
+      const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+  const mobileNav = document.getElementById('mobileNav');
 
-       if (mainMenu) {
-        window.addEventListener('scroll', function () {
-          const scrollpos = window.scrollY;
+  // Toggle menu visibility when clicking the menu icon
+  mobileMenuToggle.onclick = function (event) {
+    event.stopPropagation(); // Prevents the click from closing the menu immediately
+    mobileNav.classList.toggle('hidden');
+  };
 
-          if (scrollpos > 10) {
-            mainMenu.classList.add('bg-white');
-          } else {
-            mainMenu.classList.remove('bg-white');
-          }
-        })
-       }
-      }) ();
-
-      const navBar = document.getElementById('navBar');
-       const mobileMenu = document.getElementById('mobileMenu');
-
-     navBar.addEventListener('click', () => {
-       mobileMenu.classList.toggle ('hidden');
+  // Hide menu when clicking outside of it
+  document.addEventListener('click', function (event) {
+    if (!mobileNav.classList.contains('hidden') && !mobileNav.contains(event.target) && !mobileMenuToggle.contains(event.target)) {
+      mobileNav.classList.add('hidden');
+    }
   });
 
    
@@ -496,30 +433,7 @@
 
   // Start the typing effect on page load
   window.onload = typeText;
-
-  document.getElementById("contactForm").addEventListener("submit", function(event) {
-  event.preventDefault(); // Prevents default form submission
-
-  const name = document.getElementById("name").value.trim();
-  const phone = document.getElementById("phone").value.trim();
-  const message = document.getElementById("message").value.trim();
-
-  if (!name || !phone || !message) {
-    alert("Please fill out all fields.");
-    return;
-  }
-
-  // Validate phone number format
-  const phonePattern = /^[0-9]{10}$/;
-  if (!phonePattern.test(phone)) {
-    alert("Please enter a valid 10-digit phone number.");
-    return;
-  }
-
- // alert("Thank you for reaching out! I’ll get back to you soon.");
-  // Here you could also send form data to a backend service
-});
-
+  
 function openPopup(event, url) {
     event.preventDefault(); // Prevent default link behavior
 
