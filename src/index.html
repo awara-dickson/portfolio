@@ -117,7 +117,7 @@
                         <br><br>
                         I'm excited to share my journey and showcase the projects I've crafted along the way. Let's connect and bring more ideas to life!
                     </p>
-                    <a href="#" class="text-xl underline underline-offset-8 text-customOrange">Check out my latest projects and experience</a>
+                    <a onclick="scrollToSection ('projects')" class="text-xl underline underline-offset-8 text-customOrange hover:text-white hover:cursor-pointer">Check out my latest projects and experience</a>
                 </div>
             </div>
             <div class="grid xl:flex col-span-1 w-full h-auto border-8 border-spacing-12 border-cyan-50 rounded-md shadow-lg  ">
@@ -247,18 +247,18 @@
           <div class="grid">           
               <h4 class="text-3xl font-bold mt-1">Front-End   Development Projects</h4>
           </div> 
-           <div class="grid  xl:grid-cols-2 gap-6 mt-6">
+           <div class="grid  xl:grid-cols-2 gap-6 xl:gap-8 mt-6">
             <div class="projects ">
 
               <img src="public/img/portfolio-2.png" class="w-full h-auto object-cover rounded" alt="Developer Portfolio">
 
-             <div class="bg-cyan-400 -mt-16 rounded-xl">
+             <div class="bg-cyan-400 rounded-md mt-4">
               <div class="px-4 ">
                 <h4 class="font-bold mb-4 ">Developer Portfolio</h4>
-                <p>Simple and classic modern portfolio for who wants to present himself as a software developer. Portfolio build with highly customizable using Tailwind CSS and JavaScript</p>
+                <p class="text-lg">Simple and classic modern portfolio for who wants to present himself as a software developer. Portfolio build with highly customizable using Tailwind CSS and JavaScript</p>
               </div> 
               <div class="flex gap-3 justify-end rounded-md mr-8 mb-4">
-                <a href="https://awara-dickson.github.io/" target="_blank" class="icon  ">
+                <a href="https://awara-dickson.github.io/" target="_blank" class="icon m-2">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="w-6 h-6" viewBox="0 0 24 24">
                     <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.11.82-.26.82-.577 0-.285-.01-1.04-.015-2.04-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.757-1.333-1.757-1.09-.745.082-.73.082-.73 1.205.085 1.84 1.237 1.84 1.237 1.07 1.836 2.81 1.306 3.495.998.108-.776.418-1.306.76-1.606-2.665-.3-5.467-1.334-5.467-5.93 0-1.31.467-2.38 1.235-3.22-.125-.302-.535-1.523.115-3.176 0 0 1.005-.322 3.3 1.23a11.46 11.46 0 0 1 3-.404c1.02.004 2.045.138 3 .404 2.285-1.552 3.29-1.23 3.29-1.23.655 1.653.245 2.874.12 3.176.77.84 1.235 1.91 1.235 3.22 0 4.61-2.805 5.625-5.475 5.92.43.37.81 1.1.81 2.22 0 1.606-.015 2.896-.015 3.287 0 .32.215.694.825.577C20.565 21.796 24 17.297 24 12c0-6.63-5.37-12-12-12z"/>
                   </svg>
@@ -266,45 +266,115 @@
               </div>
              </div>
             </div>
-           
-            <div class="projects">
-              <img src="public/img/bright-dev.png" class="w-full h-auto object-cover rounded" alt="Bright-star dev">
-              <h4 class="font-bold ">BrightStar Website</h4>
-              <p>FoodFair, a leading food delivery company, enhanced their operations with a custom logistics platform from AlphaDev that cut delivery times by 20% and improved customer satisfaction.</p>
+
+            <div class="projects ">
+              <img src="public/img/bright-dev.png" class="w-full h-auto object-cover rounded" alt="Developer Portfolio">
+
+             <div class="bg-cyan-400 rounded-md mt-4">
+              <div class="px-4 ">
+                <h4 class="font-bold mb-4 ">BrighStar Finance Website</h4>
+                <p class="text-lg">BrightStar finance website has enhanced service efficiency by 44%, ensuring fast, reliable transactions with robust security measures. Customers trust's the platform's proven performance, dedicated support, and commitment to safeguarding their financial information.</p>
+              </div> 
+              <div class="flex gap-3 justify-end rounded-md mr-8 mb-4">
+                <a href="https://awara-dickson.github.io/fintech/" target="_blank" class="icon m-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="w-6 h-6" viewBox="0 0 24 24">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.11.82-.26.82-.577 0-.285-.01-1.04-.015-2.04-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.757-1.333-1.757-1.09-.745.082-.73.082-.73 1.205.085 1.84 1.237 1.84 1.237 1.07 1.836 2.81 1.306 3.495.998.108-.776.418-1.306.76-1.606-2.665-.3-5.467-1.334-5.467-5.93 0-1.31.467-2.38 1.235-3.22-.125-.302-.535-1.523.115-3.176 0 0 1.005-.322 3.3 1.23a11.46 11.46 0 0 1 3-.404c1.02.004 2.045.138 3 .404 2.285-1.552 3.29-1.23 3.29-1.23.655 1.653.245 2.874.12 3.176.77.84 1.235 1.91 1.235 3.22 0 4.61-2.805 5.625-5.475 5.92.43.37.81 1.1.81 2.22 0 1.606-.015 2.896-.015 3.287 0 .32.215.694.825.577C20.565 21.796 24 17.297 24 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                </a>  
+              </div>
+             </div>
             </div>
 
-            <div class="projects">
-              <img src="public/img/Bright-star.png" class="w-full h-auto object-cover rounded" alt="Property Management System">
-              <h4 class="font-bold ">Property Management System</h4>
-              <p>We partnered with KConstruction Corp, a real estate company, to develop a property management system that centralized their listings, reduced administrative overhead, and improved communication with clients by 40%.</p>
-            </div>  
-            <div class="projects">
-              <img src="public/img/Amazon-clone.png" class="w-full h-auto object-cover rounded" alt="Property Management System">
-              <h4 class="font-bold ">Property Management System</h4>
-              <p>We partnered with KConstruction Corp, a real estate company, to develop a property management system that centralized their listings, reduced administrative overhead, and improved communication with clients by 40%.</p>
-            </div>  
+            <div class="projects ">
+              <img src="public/img/Bright-star.png" class="w-full h-auto object-cover rounded" alt="Developer Portfolio">
+
+             <div class="bg-cyan-400 rounded-md mt-4">
+              <div class="px-4 ">
+                <h4 class="font-bold mb-4 ">Bright Dev Software</h4>
+                <p class="text-lg">Bright Dev is a software development company website showcases innovative solutions, expert services, and a client-focused approach. Featuring successful projects, skilled team profiles, and a streamlined contact system, it reflects commitment to delivering high-quality, customized software to meet diverse needs.</p>
+              </div> 
+              <div class="flex gap-3 justify-end rounded-md mr-8 mb-4">
+                <a href="https://awara-dickson.github.io/landing-page/" target="_blank" class="icon m-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="w-6 h-6" viewBox="0 0 24 24">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.11.82-.26.82-.577 0-.285-.01-1.04-.015-2.04-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.757-1.333-1.757-1.09-.745.082-.73.082-.73 1.205.085 1.84 1.237 1.84 1.237 1.07 1.836 2.81 1.306 3.495.998.108-.776.418-1.306.76-1.606-2.665-.3-5.467-1.334-5.467-5.93 0-1.31.467-2.38 1.235-3.22-.125-.302-.535-1.523.115-3.176 0 0 1.005-.322 3.3 1.23a11.46 11.46 0 0 1 3-.404c1.02.004 2.045.138 3 .404 2.285-1.552 3.29-1.23 3.29-1.23.655 1.653.245 2.874.12 3.176.77.84 1.235 1.91 1.235 3.22 0 4.61-2.805 5.625-5.475 5.92.43.37.81 1.1.81 2.22 0 1.606-.015 2.896-.015 3.287 0 .32.215.694.825.577C20.565 21.796 24 17.297 24 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                </a>  
+              </div>
+             </div>
+            </div>
+
+            <div class="projects ">
+              <img src="public/img/Amazon-clone.png" class="w-full h-auto object-cover rounded" alt="Developer Portfolio">
+             <div class="bg-cyan-400 rounded-md mt-4">
+              <div class="px-4 ">
+                <h4 class="font-bold mb-4 ">Amazon Clone</h4>
+                <p class="text-lg">This Amazon website clone in my portfolio demonstrates my front-end skills, replicating key features like responsive design, product displays, and seamless navigation, showcasing a user-friendly shopping experience built with HTML, CSS, and JavaScript.</p>
+              </div> 
+              <div class="flex gap-3 justify-end rounded-md mr-8 mb-4">
+                <a href="https://github.com/awara-dickson" target="_blank" class="icon m-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="w-6 h-6" viewBox="0 0 24 24">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.11.82-.26.82-.577 0-.285-.01-1.04-.015-2.04-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.757-1.333-1.757-1.09-.745.082-.73.082-.73 1.205.085 1.84 1.237 1.84 1.237 1.07 1.836 2.81 1.306 3.495.998.108-.776.418-1.306.76-1.606-2.665-.3-5.467-1.334-5.467-5.93 0-1.31.467-2.38 1.235-3.22-.125-.302-.535-1.523.115-3.176 0 0 1.005-.322 3.3 1.23a11.46 11.46 0 0 1 3-.404c1.02.004 2.045.138 3 .404 2.285-1.552 3.29-1.23 3.29-1.23.655 1.653.245 2.874.12 3.176.77.84 1.235 1.91 1.235 3.22 0 4.61-2.805 5.625-5.475 5.92.43.37.81 1.1.81 2.22 0 1.606-.015 2.896-.015 3.287 0 .32.215.694.825.577C20.565 21.796 24 17.297 24 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                </a>  
+              </div>
+             </div>
+            </div> 
           </div>
 
           <div class="grid">            
-              <h4 class="text-4xl font-bold mt-8 underline underline-offset-2">Web Design Projects</h4>               
+              <h4 class="text-4xl font-bold mt-12 xl:mt-16  underline underline-offset-2">Web Design Projects</h4>               
           </div> 
-
           <div class="grid  xl:grid-cols-2 gap-6 mt-6">
-            <div class="projects ">
-              <img src="public/img/BrightNutrition-web.png" class="w-full h-auto object-cover rounded" alt="Cloud-Based CRM">
-              <h4 class="font-bold ">Cloud-Based CRM</h4>
-              <p>For Snobole Software Limited, we implemented a cloud-based CRM system that improved client communication and boosted overall project efficiency by 50%</p>
-            </div> 
-            <div class="projects">
-              <img src="public/img/organic-food webdesign.png" class="w-full h-auto object-cover rounded" alt="Cloud-Based CRM">
-              <h4 class="font-bold ">Cloud-Based CRM</h4>
-              <p>For Snobole Software Limited, we implemented a cloud-based CRM system that improved client communication and boosted overall project efficiency by 50%</p>
-            </div> 
-            <div class="projects">
-              <img src="public/img/E-commerce.png" class="w-full h-auto object-cover rounded" alt="Cloud-Based CRM">
-              <h4 class="font-bold ">Cloud-Based CRM</h4>
-              <p>For Snobole Software Limited, we implemented a cloud-based CRM system that improved client communication and boosted overall project efficiency by 50%</p>
-            </div> 
+            <div class="projects bg-cyan-200 ">
+              <img src="public/img/organic-food webdesign.png" class="w-full h-auto object-cover rounded" alt="organic food design">
+             <div class="bg-cyan-200 rounded-md mt-4">
+              <div class="px-4 ">
+                <h4 class="font-bold mb-4 ">Organic Food design Website</h4>
+                <p class="text-lg">This organic food website design in my portfolio, created with Figma and seamlessly prototyped, highlights clean layouts, earthy tones, and intuitive navigation, embodying a fresh, user-friendly experience for showcasing healthy products and sustainable lifestyle choices.</p>
+              </div> 
+              <div class="flex gap-3 justify-end rounded-md mr-8 mb-4">
+                <a href="https://www.figma.com/proto/9lbCeckJ7logW8T083oP30/Organic-Fruits-website?page-id=0%3A1&node-id=99-10208&starting-point-node-id=51%3A115&scaling=scale-down&content-scaling=fixed&t=osRnmpGqOf6Y746u-1" target="_blank" class="icon m-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M22 7.001h-5v1.5h5v-1.5zm-3.5 5.005c-1.377 0-1.5.99-1.5.99h2.92c-.003-.108-.052-.99-1.42-.99zm-6.5-.004h-2v2h2.014c.678 0 1.488-.285 1.486-1.002.002-.63-.432-.998-1.5-.998zm0-3.002h-1.988v1.502h1.988c.569 0 1.455-.058 1.453-.75.002-.676-.676-.752-1.453-.752zm9.5-6h-20c-.552 0-1 .448-1 1v20c0 .552.448 1 1 1h20c.552 0 1-.448 1-1v-20c0-.552-.448-1-1-1zm-8.526 10.782c.023 2.313-2.973 2.22-2.973 2.22h-3.501v4.003h-2.5v-10h6.008c.937 0 2.993.297 2.993 2.282 0 .937-.547 1.701-1.527 1.982 1.219.209 1.5 1.048 1.5 1.513zm7.026 1.799c0 3.323-3.026 3-3.026 3-2.975 0-3.007-2.708-3.007-2.708h2.5s.083.998 1.004 1c1 0 1.026-.994 1.026-1.009h-2.027c-.014 0 .027-3.003 3.003-3.003 2.975 0 2.527 2.729 2.527 2.729z"/>
+                  </svg>                  
+                </a>  
+              </div>
+             </div>
+            </div>
+            <div class="projects bg-cyan-200 ">
+              <img src="public/img/BrightNutrition-web.png" class="w-full h-auto object-cover rounded" alt="Nutrition Consultancy Website">
+
+             <div class="bg-cyan-200 rounded-md mt-4">
+              <div class="px-4 ">
+                <h4 class="font-bold mb-4 ">Nutrition Consultancy Website</h4>
+                <p class="text-lg">The nutrition consultancy website features a clean, professional layout with easy navigation, informative sections, and appointment scheduling. Designed for user engagement, it effectively promotes personalized nutrition guidance and client trust through a streamlined, modern interface.</p>
+              </div> 
+              <div class="flex gap-3 justify-end rounded-md mr-8 mb-4">
+                <a href="https://www.figma.com/proto/gpLCLMsmxd5vLMUkg7TKGP/Bright-Design-electronic-shops-website?page-id=361%3A4625&node-id=361-4626&starting-point-node-id=361%3A4626&scaling=contain&content-scaling=responsive&t=T93dmxj3xilI82WX-1" target="_blank" class="icon m-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M22 7.001h-5v1.5h5v-1.5zm-3.5 5.005c-1.377 0-1.5.99-1.5.99h2.92c-.003-.108-.052-.99-1.42-.99zm-6.5-.004h-2v2h2.014c.678 0 1.488-.285 1.486-1.002.002-.63-.432-.998-1.5-.998zm0-3.002h-1.988v1.502h1.988c.569 0 1.455-.058 1.453-.75.002-.676-.676-.752-1.453-.752zm9.5-6h-20c-.552 0-1 .448-1 1v20c0 .552.448 1 1 1h20c.552 0 1-.448 1-1v-20c0-.552-.448-1-1-1zm-8.526 10.782c.023 2.313-2.973 2.22-2.973 2.22h-3.501v4.003h-2.5v-10h6.008c.937 0 2.993.297 2.993 2.282 0 .937-.547 1.701-1.527 1.982 1.219.209 1.5 1.048 1.5 1.513zm7.026 1.799c0 3.323-3.026 3-3.026 3-2.975 0-3.007-2.708-3.007-2.708h2.5s.083.998 1.004 1c1 0 1.026-.994 1.026-1.009h-2.027c-.014 0 .027-3.003 3.003-3.003 2.975 0 2.527 2.729 2.527 2.729z"/>
+                  </svg>                  
+                </a>  
+              </div>
+             </div>
+            </div>
+            <div class="projects bg-cyan-200 ">
+              <img src="public/img/E-commerce.png" class="w-full h-auto object-cover rounded" alt="E-Commerce Web design">
+             <div class="bg-cyan-200 rounded-md mt-4">
+              <div class="px-4 ">
+                <h4 class="font-bold mb-4 ">E-Commerce Web design</h4>
+                <p class="text-lg">This e-commerce website offers a seamless shopping experience with a clean design, intuitive navigation, and secure checkout. Product pages are optimized for browsing, and a responsive layout ensures accessibility across devices, enhancing customer convenience and engagement.
+                </p>
+              </div> 
+              <div class="flex gap-3 justify-end rounded-md mr-8 mb-4">
+                <a href="https://www.figma.com/proto/gpLCLMsmxd5vLMUkg7TKGP/Bright-Design-electronic-shops-website?page-id=361%3A4625&node-id=361-4626&starting-point-node-id=361%3A4626&scaling=contain&content-scaling=responsive&t=T93dmxj3xilI82WX-1" target="_blank" class="icon m-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M22 7.001h-5v1.5h5v-1.5zm-3.5 5.005c-1.377 0-1.5.99-1.5.99h2.92c-.003-.108-.052-.99-1.42-.99zm-6.5-.004h-2v2h2.014c.678 0 1.488-.285 1.486-1.002.002-.63-.432-.998-1.5-.998zm0-3.002h-1.988v1.502h1.988c.569 0 1.455-.058 1.453-.75.002-.676-.676-.752-1.453-.752zm9.5-6h-20c-.552 0-1 .448-1 1v20c0 .552.448 1 1 1h20c.552 0 1-.448 1-1v-20c0-.552-.448-1-1-1zm-8.526 10.782c.023 2.313-2.973 2.22-2.973 2.22h-3.501v4.003h-2.5v-10h6.008c.937 0 2.993.297 2.993 2.282 0 .937-.547 1.701-1.527 1.982 1.219.209 1.5 1.048 1.5 1.513zm7.026 1.799c0 3.323-3.026 3-3.026 3-2.975 0-3.007-2.708-3.007-2.708h2.5s.083.998 1.004 1c1 0 1.026-.994 1.026-1.009h-2.027c-.014 0 .027-3.003 3.003-3.003 2.975 0 2.527 2.729 2.527 2.729z"/>
+                  </svg>                  
+                </a>  
+              </div>
+             </div>
+            </div>
           </div>
         </div>
       </section>
@@ -316,7 +386,7 @@
             <h2 class="font-bold text-3xl xl:text-5xl my-8 ">Get In Touch </h2>
 
             <div class="grid gap-8 xl:gap-16 xl:grid-cols-7">
-              <div class="grid xl:col-span-3">
+              <div class="grid xl:col-span-4 bg-cyan-200 rounded-lg">
                 <div class="px-6 py-10  border-cyan-500 shadow-xl ">
                   <img class="w-full h-auto object-cover m-2  rounded-md" src="public/img/organic-mockup.png" alt="organic food website mockup">
 
@@ -345,7 +415,7 @@
                   </div>
                 </div>
               </div>
-              <div class="grid col-span-4 ">
+              <div class="grid col-span-3 bg-cyan-200 rounded-lg">
                 <div class=" px-6 py-10  border-cyan-500 shadow-xl text-center ">
                   <h2 class="text-3xl font-bold my-4">Contact Me</h2>
                   <p class="text-gray-600 mb-8">If you'd like to reach out, please fill in the form below:</p>
@@ -359,22 +429,18 @@
                     <a href="mailto:awaradickson@gmail.com" class="text-customtealblue text-xl hover:underline hover:bg-white ">
                       awaradickson@gmail.com
                     </a>
-                  </p>
-                                
+                  </p>             
                 </div> 
               </div>
-
             </div>
-
           </div>
-
         </div> 
       </section>
       <section>
         <div>
           <div class="flex flex-col items-center text-white">
-            <svg xmlns="http://www.w3.org/2000/svg" onclick="scrollToSection('home')" class="h-20 w-20 rounded-full shadow-lg bg-customtealblue p-2 hover:cursor-pointer hover:text-customOrange hover:scale-110 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M5 10l7-7 7 7M5 20l7-7 7 7" />
+            <svg xmlns="http://www.w3.org/2000/svg" onclick="scrollToSection('home')" class="h-14 w-14 rounded-full shadow-lg bg-customtealblue p-2 hover:cursor-pointer hover:text-customOrange hover:scale-110 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 10l7-7 7 7M5 20l7-7 7 7" />
             </svg>
           </div>
           
